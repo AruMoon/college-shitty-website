@@ -35,7 +35,7 @@
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	height: 600px;
+	height: 800px;
 }
 
 .content-center {
@@ -204,9 +204,6 @@
 @media all and (max-width: 954px) {
 	.container {
 		max-width: 720px;
-	}
-	.view {
-		height: 800px;
 	}
 }
 
