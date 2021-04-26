@@ -35,7 +35,14 @@
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	height: 800px;
+	height: 600px;
+}
+
+.view-smaller {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	height: 400px;
 }
 
 .content-center {
@@ -173,12 +180,25 @@
 	padding: 1rem;
 }
 
+.m-2 {
+	margin: 2rem;
+}
+
 .mr-1 {
 	margin-right: 1rem;
 }
 
+.m-1 {
+	margin: 1rem;
+}
+
 .mr-auto {
 	margin-right: auto !important;
+}
+
+/* Оформление */
+.rounded {
+	border-radius: 8px;
 }
 
 /* Максимальные размеры */
@@ -212,7 +232,10 @@
 		max-width: 540px;
 	}
 	.view {
-		height: 1000px;
+		height: 800px;
+	}
+	.view-smaller {
+		height: 600px;
 	}
 }
 
