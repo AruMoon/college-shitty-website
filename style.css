@@ -9,7 +9,7 @@ input[type="radio"] {
 }
 
 label {
-	width: 18%;
+	width: 31.3%;
 	float: left;
 	text-align: center;
 	background: #fff;
@@ -17,7 +17,7 @@ label {
 	color: #222222;
 	padding: 0.5%;
 	margin: 0.5%;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -275,5 +275,8 @@ label {
 	}
 	.navbar {
 		display: block;
+	}
+	label {
+		width: 48%;
 	}
 }
