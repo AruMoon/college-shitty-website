@@ -36,13 +36,13 @@
             border: 5px solid #2f363c;
             background-color: #738290;
         }
-        #btn1:checked ~ .switch label[for="btn1"] {
+        #btn1:checked~.switch label[for="btn1"] {
             background-color: white;
         }
-        #btn2:checked ~ .switch label[for="btn2"] {
+        #btn2:checked~.switch label[for="btn2"] {
             background-color: white;
         }
-        #btn3:checked ~ .switch label[for="btn3"] {
+        #btn3:checked~.switch label[for="btn3"] {
             background-color: white;
         }
         .slider-inner {
@@ -57,23 +57,22 @@
             height: 340px;
             float: left;
         }
-        #btn1:checked ~ .slider-inner .slides {
+        #btn1:checked~.slider-inner .slides {
             transform: translate(0);
         }
-        #btn2:checked ~ .slider-inner .slides {
+        #btn2:checked~.slider-inner .slides {
             transform: translate(-680px);
         }
-        #btn3:checked ~ .slider-inner .slides {
+        #btn3:checked~.slider-inner .slides {
             transform: translate(-1360px);
         }
     </style>
 </head>
 <body>
     <div class="slider">
-        <input type="radio" name="switch" id="btn1" checked />
-        <input type="radio" name="switch" id="btn2" />
-        <input type="radio" name="switch" id="btn3" />
-    </div>
+        <input type="radio" name="switch" id="btn1" checked>
+        <input type="radio" name="switch" id="btn2">
+        <input type="radio" name="switch" id="btn3">
 
     <div class="switch">
         <label for="btn1"></label>
@@ -87,6 +86,8 @@
             <img src="Media/point/3-9.jpg" alt="">
             <img src="Media/point/9-9.jpg" alt="">
         </div>
+    </div>
+
     </div>
 </body>
 </html>
