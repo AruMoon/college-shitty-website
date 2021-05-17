@@ -222,8 +222,16 @@ label {
 	display: inline-block;
 	background-color: #999;
 	width: 33%;
-	height: 20px;
-	margin: 10px;
+	height: 160px;
+	margin: 2%;
+	background-position: center;
+	background-size: cover;
+}
+
+.tile div {
+	transform: scale(0);
+	height: 100%;
+	width: 100%;
 }
 
 /* Фильтры */
@@ -264,6 +272,9 @@ label {
 	.view-smaller {
 		height: 600px;
 	}
+	.tile {
+		width: 48%;
+	}
 }
 
 @media all and (min-width: 768px) {
@@ -287,5 +298,8 @@ label {
 	label {
 		width: 45%;
 		margin: 2%;
+	}
+	.tile {
+		width: 96%;
 	}
 }
