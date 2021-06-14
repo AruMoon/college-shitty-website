@@ -52,14 +52,20 @@ label {
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	height: 600px;
+	height: 800px;
 }
 
 .view-smaller {
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	height: 400px;
+	height: 600px;
+}
+
+.overflow-y {
+	height: 600px;
+	overflow: scroll;
+	overflow-y: auto;
 }
 
 .content-center {
@@ -221,7 +227,7 @@ label {
 .tile {
 	display: inline-block;
 	background-color: #999;
-	width: 33%;
+	width: 29%;
 	height: 160px;
 	margin: 2%;
 	background-position: center;
@@ -235,6 +241,55 @@ label {
 }
 
 /* Фильтры */
+input[type="radio"][id="all"]:checked + label {
+	background-color: #aaaaaa;
+}
+
+input[type="radio"][id="russia"]:checked + label {
+	background-color: #ffaaaa;
+}
+
+input[type="radio"][id="russia"]:checked ~ .indo-tiles, input[type="radio"][id="russia"]:checked ~ .china-tiles, input[type="radio"][id="russia"]:checked ~ .viet-tiles, input[type="radio"][id="russia"]:checked ~ .japan-tiles {
+	opacity: 0;
+	display: none;
+}
+
+input[type="radio"][id="indonesian"]:checked + label {
+	background-color: #ffffaa;
+}
+
+input[type="radio"][id="indonesian"]:checked ~ .russia-tiles, input[type="radio"][id="indonesian"]:checked ~ .china-tiles, input[type="radio"][id="indonesian"]:checked ~ .viet-tiles, input[type="radio"][id="indonesian"]:checked ~ .japan-tiles {
+	opacity: 0;
+	display: none;
+}
+
+input[type="radio"][id="china"]:checked + label {
+	background-color: #aaffaa;
+}
+
+input[type="radio"][id="china"]:checked ~ .indo-tiles, input[type="radio"][id="china"]:checked ~ .russia-tiles, input[type="radio"][id="china"]:checked ~ .viet-tiles, input[type="radio"][id="china"]:checked ~ .japan-tiles {
+	opacity: 0;
+	display: none;
+}
+
+input[type="radio"][id="vietnam"]:checked + label {
+	background-color: #ffffaa;
+}
+
+input[type="radio"][id="vietnam"]:checked ~ .indo-tiles, input[type="radio"][id="vietnam"]:checked ~ .china-tiles, input[type="radio"][id="vietnam"]:checked ~ .russia-tiles, input[type="radio"][id="vietnam"]:checked ~ .japan-tiles {
+	opacity: 0;
+	display: none;
+}
+
+input[type="radio"][id="japan"]:checked + label {
+	background-color: #ffaaff;
+}
+
+input[type="radio"][id="japan"]:checked ~ .indo-tiles, input[type="radio"][id="japan"]:checked ~ .china-tiles, input[type="radio"][id="japan"]:checked ~ .viet-tiles, input[type="radio"][id="japan"]:checked ~ .russia-tiles {
+	opacity: 0;
+	display: none;
+}
+
 
 /* Максимальные размеры */
 .max-64 {
@@ -260,20 +315,17 @@ label {
 	.container {
 		max-width: 720px;
 	}
+	.tile {
+		width: 28.9%;
+	}
 }
 
 @media all and (max-width: 768px) {
 	.container {
 		max-width: 540px;
 	}
-	.view {
-		height: 800px;
-	}
-	.view-smaller {
-		height: 600px;
-	}
 	.tile {
-		width: 48%;
+		width: 45.5%;
 	}
 }
 
