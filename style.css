@@ -43,6 +43,17 @@ label {
 	color: seashell;
 }
 
+#scrl-up-btn {
+	border-radius: 1rem;
+	position: fixed;
+	/* display: none; */
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 10000;
+	background-color: #ffaaff !important;
+	color: blue;
+}
+
 /* Отображение */
 .d-flex {
 	display: flex;
